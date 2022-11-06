@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+.escuro body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+.escuro::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 20px;
+}
+
+body {
+    font-family: "Orbitron", sans-serif;
+    ;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 65px;
+    margin: 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+}
+
+li {
+    padding-top: 10px;
+    margin-right: 150px;
+}
+
+#imglinkedin {
+    display: flex;
+    align-items: flex-end;
+    width: 50px;
+    margin-left: 8px;
+}
+
+#imggithub {
+    display: flex;
+    align-items: flex-end;
+    width: 50px;
+}
+
+#imgcodepen {
+    display: flex;
+    align-items: flex-end;
+    width: 50px;
+    margin-left: 8px;
+}
+
+/*fim do cabeçalho*/
+
+.estilo-foto {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 100px;
+    display: block;
+}
+
+.estilo-foto:hover {
+    border-radius: 25px;
+    width: 400px;
+    height: 350px;
+}
+
+.texto-perfil {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 25px;
+    margin-top: 10px;
+
+}
+
+
+.container {
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: white;
+    margin: 30px;
+    display: flex;
+    justify-items: end;
+    justify-content: space-between;
+}
+
+#projetos {
+    margin-left: 0%;
+}
+
+.container2 {
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: white;
+    margin: 30px;
+    padding: 10px;
+}
+
+.celula1 {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-left: 360px;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 80px;
+}
+
+.container3 {
+    color: white;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 30px;
+    padding: 10px;
+}
+
+
+
+
+/*botao de mudar tema*/
+button {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    margin-left: 1100px;
+    font-family: "Orbitron", sans-serif;
+
+}
+
+body button:hover {
+    padding: 20px;
+}
+
+/*parte do link*/
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(61, 197, 238);
+}
+
+/*parte do java do link também*/
+.escuro {
+    background: rgb(5, 5, 5);
+    background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgba(73, 73, 77, 1) 50%, rgba(25, 29, 29, 1) 100%);
+}
+
+.escuro header {
+    color: orange;
+}
+
+.escuro main {
+    color: orange;
+}
+
+.escuro div {
+    color: orange;
+}
+
+.escuro p {
+    color: black;
+}
+
+/*parte dos links escuros*/
+.escuro a:link {
+    color: black;
+}
+
+.escuro a:hover {
+    color: orange;
+}
+
+/*.escuro a:visited{
+    color: orange;
+    list-style: none;
+}*/
+
+
+/*parte do entre em contato*/
+.formulario {
+    padding: 10px;
+}
+
+#cnome {
+    margin-left: 100px;
+    border-color: white;
+    border-radius: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 5px;
+}
+
+#ctel {
+    margin-left: 73px;
+    border-color: white;
+    border-radius: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 5px;
+}
+
+#cemail {
+    margin-left: 103px;
+    border-color: white;
+    border-radius: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 5px;
+}
+
+#ctextarea {
+    margin-left: 50px;
+    border-color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 25px;
+    padding-top: 0%;
+    height: 55px;
+    margin-top: 10px;
+}
+
+#cenviar {
+    margin-top: 30px;
+    margin-left: 230px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-color: white;
+    font-family: "Orbitron", sans-serif;
+}
+
+footer {
+    color: white;
+    margin-left: 38%;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>willianflix</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+        body {
+            font-family: "Orbitron", sans-serif;
+            ;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+.escuro body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+.escuro::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 20px;
+}
+
+        button {
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 10px;
+            display: flex;
+            margin-left: 1100px;
+            font-family: "Orbitron", sans-serif;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            border: solid 1px rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: white;
+            padding: 30px;
+            margin-top: 65px;
+            margin: 30px;
+        }
+
+        main {
+            border: solid 1px rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: white;
+            padding: 10px;
+        }
+        .textoexplicativo{
+            margin-top: 10px;
+            border: solid 1px rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+        #voltar{
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px;
+            margin-left: 50%;
+            margin-bottom: 100px;
+            color: black;
+            
+        }
+        .escuro {
+            background: rgb(5, 5, 5);
+            background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgba(73, 73, 77, 1) 50%, rgba(25, 29, 29, 1) 100%);
+        }
+
+        .escuro button {
+            color: orange;
+        }
+
+        .escuro header {
+            color: orange;
+        }
+
+        .escuro main {
+            color: orange;
+        }
+        .escuro div{
+            color: orange;
+        }
+        .escuro p{
+            color: black;
+        }
+        a:link{
+            color: darkorange;
+            text-decoration: none;
+        }
+        a:visited{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: orange;
+        }
+        mark{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="mudarTema()" class="botão">Mudar Tema</button>
+    <header>
+        <h1>WillianFlix</h1>
+    </header>
+    <main>
+        <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result"
+            data-slug-hash="ZEoQvaP" data-user="vv1ll14n"
+            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/vv1ll14n/pen/ZEoQvaP">
+                    AluraFlix v1- ID3</a> by willian (<a href="https://codepen.io/vv1ll14n">@vv1ll14n</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </main>
+    <div class="textoexplicativo">
+        <p>Projeto muito legal desenvolvido na <mark>imersão dev</mark>, onde fizemos esses codigos. Básicamente você pode adicionar qualquer filme apenas importando seu png.</p>
+    </div>
+
+
+
+    <footer>
+        <a id="voltar" href="index.html">voltar</a>
+    </footer>
+  
+    <script>
+        function mudarTema() {
+            document.body.classList.toggle("escuro")
+        }
+    </script>
+</body>
+
+</html>

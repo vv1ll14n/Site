@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub Layout´s</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+        body {
+            font-family: "Orbitron", sans-serif;
+            ;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+.escuro body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+.escuro::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 20px;
+}
+
+        button {
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 10px;
+            display: flex;
+            margin-left: 1100px;
+            font-family: "Orbitron", sans-serif;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            border: solid 1px rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: white;
+            padding: 30px;
+            margin-top: 65px;
+            margin: 30px;
+        }
+        section{
+            border: solid 1px rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        /*configuraçoes especiais para aqui*/
+       .flex-container{
+        display: flex;
+       }
+       .coluna{
+        width: 100%;
+       }
+       .imagem{
+        width: 50%;
+       }
+       .texto{
+        width: 50%;
+        font-size: 25px;
+        text-align:justify;
+       }
+        img{
+            margin-top: 7%;
+            width: 50%;
+            height: 200px;
+            margin-left: 50%;
+        }
+        img:hover{
+            width: 80%;
+            margin-left: 25%;
+        }
+        /*configurações especiais para ca*/
+        .textoexplicativo{
+            margin-top: 10px;
+            border: solid 1px rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+        #voltar{
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px;
+            margin-left: 50%;
+            margin-bottom: 100px;
+            color: black;
+            
+        }
+        .escuro {
+            background: rgb(5, 5, 5);
+            background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgba(73, 73, 77, 1) 50%, rgba(25, 29, 29, 1) 100%);
+        }
+
+        .escuro button {
+            color: orange;
+        }
+
+        .escuro header {
+            color: orange;
+        }
+
+        .escuro main {
+            color: orange;
+        }
+        .escuro div{
+            color: orange;
+        }
+        .escuro p{
+            color: black;
+        }
+        a:link{
+            color: darkorange;
+            text-decoration: none;
+        }
+        a:visited{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            border: 1px solid aqua;
+            border-radius: 20px;
+            padding: 5px;
+            color: rgb(0, 0, 0);
+            box-shadow: 1px 2px 5px aqua;
+        }
+        .escuro a:hover{
+            border: 1px solid orange;
+            box-shadow: 1px 2px 5px orange
+        }
+        mark{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mudarTema()" class="botão">Mudar Tema</button>
+    <header>
+        <h1>Layout´s</h1>
+        <p>Projetos feitos com HTML e CSS</p>
+    </header>
+    <main>
+        <!--layout pet shop-->
+        <section class="projeto">
+        <div class="flex-container">
+            <div class="texto coluna">
+           <h2>PET SHOP</h2><br>
+           <p>lay out desenvolvido no primeiro semestre da ETEC, na materia de pwI (programação web) do professor wilians, no segundo semestre de 2022.</p>
+           <a href="#">clique para acessar🐶</a>
+            </div>
+            <div class="imagem coluna">
+           <figure>
+                <img src="img/logo-mari-e-gabi-petshop.svg" alt="foto do projeto">
+           </figure>
+        </div>
+        </section>
+        <section>
+        <div class="flex-container">
+            <div class="texto coluna">
+           <h2>NETURE</h2><br>
+           <p>Neture é o nome de uma farmácia fictícia, que crie para dar inicio a minha meta de projetos semanais, com HTML, CSS e o desing feio no FIGMA tudo feito por mim.</p>
+           <a href="https://vv1ll14n.github.io/FARMACIA-NETURE/">clique para acessar🌱</a>
+            </div>
+            <div class="imagem coluna">
+           <figure>
+                <img src="img/LOGO SVG.svg" alt="foto do projeto">
+           </figure>
+        </div>
+        </div>
+       </section>
+
+
+    </main>
+
+    <footer>
+        <a id="voltar" href="index.html">voltar</a>
+    </footer>
+    <script>
+        function mudarTema() {
+            document.body.classList.toggle("escuro")
+        }
+    </script>
+</body>
+</html>

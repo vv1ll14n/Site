@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willian Oliveira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button onclick="mudarTema()" class="botão">Mudar Tema</button>
+    <header>
+        <div class="informacoes-texto">
+            <h1>WILLIAN DOS SANTOS OLIVEIRA</h1>
+            <h3>Estudante de programação</h3>
+        </div>
+        <div class="redes">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/willian-oliveira-3150ab221/" target="_blank">linkedin
+                        <img id="imglinkedin" src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+                    </a></li>
+                <li><a href="https://codepen.io/vv1ll14n" target="_blank">Codepen
+                        <img id="imgcodepen" src="https://cdn-icons-png.flaticon.com/512/2111/2111501.png">
+                    </a></li>
+                <li><a href="https://github.com/settings/profile" target="_blank">Github
+                        <img id="imggithub" src="https://icones.pro/wp-content/uploads/2021/06/icone-github-noir.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div>
+                <img src="img/foto-perfil-github.jpg" class="estilo-foto">
+            </div>
+            <div class="celula1">
+                <div class="titulo">
+                    <h2>Quem sou?</h2>
+                </div>
+                <div class="texto-perfil">
+                    <p>
+                        Olá, seja bem-vindo ao meu pequeno portifólio, fico feliz em recebe-lo(a). Afinal quem sou eu?
+                        Eu me chamo willian, mas pode chamar de will, tenho 19 anos. Estou entrando nesse mundo incrivel e mágico da programação, atualmente estudo na ETEC o curso de desenvolvimento de sistemas. aqui tenhos dois projetos feitos durante a imersão dev feito pela alura, onde tive o primeiro contato com javascript, enfim espero que goste ❤️.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div>
+                <h3 id="projetos">PROJETOS</h3>
+            </div>
+            <div class="projeto1">
+                <a href="willianflix.html">Willianflix</a> <br>
+                <a href="conversordemoedas.html">conversor de moedas</a><br>
+                <a href="hublayout.html">Layout´s</a>
+            </div>
+        </div>
+        <div class="container3">
+            <h3>Me mande uma mensagem</h3>
+
+            <div class="formulario">
+                <form>
+                    <label for="cnome">Nome</label>
+                    <input type="text" id="cnome" name="cnome"><br>
+                    <label for="ctel">Telefone</label>
+                    <input type="number" id="ctel" name="ctel"><br>
+                    <label for="cemail">Email</label>
+                    <input type="email" id="cemail" name="cmail" placeholder="exemplo@email.com.br"><br>
+                    <label for="ctextarea">Mensagem</label>
+                    <textarea name="ctextarea" id="ctextarea" cols="30" rows="10" placeholder="Digite aqui sua mensagem"></textarea><Br>
+                    <label for="cenviar"></label>
+                    <input placeholder="willianOliveira@gmail.com" type="submit" id="cenviar" name="cenviar"
+                        onclick="msgobrigado()">
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <pre>
+        <p>©️ Todos os direitos reservados!<br>
+         São Paulo/SP<br>
+            2022<br>
+        </p>
+    </pre>
+
+    </footer>
+</body>
+<!--para linkar o js no HTML-->
+<script src="script.js"></script>
+</html>

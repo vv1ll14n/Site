@@ -17,28 +17,28 @@
         }
 
         body::-webkit-scrollbar {
-    width: 12px;
-    /* width of the entire scrollbar */
-}
+            width: 12px;
+            /* width of the entire scrollbar */
+        }
 
-body::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
-    /* color of the tracking area */
-}
+        body::-webkit-scrollbar-track {
+            background: rgb(255, 255, 255);
+            /* color of the tracking area */
+        }
 
-body::-webkit-scrollbar-thumb {
-    background-color: aqua;
-    border-radius: 20px;
-}
+        body::-webkit-scrollbar-thumb {
+            background-color: aqua;
+            border-radius: 20px;
+        }
 
-.escuro body::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
-}
+        .escuro body::-webkit-scrollbar-track {
+            background: rgb(255, 255, 255);
+        }
 
-.escuro::-webkit-scrollbar-thumb {
-    background-color: orange;
-    border-radius: 20px;
-}
+        .escuro::-webkit-scrollbar-thumb {
+            background-color: orange;
+            border-radius: 20px;
+        }
 
         button {
             background-color: white;
@@ -46,7 +46,7 @@ body::-webkit-scrollbar-thumb {
             border-radius: 20px;
             padding: 10px;
             display: flex;
-            margin-left: 1100px;
+            margin-left: 90%;
             font-family: "Orbitron", sans-serif;
 
         }
@@ -68,7 +68,8 @@ body::-webkit-scrollbar-thumb {
             background-color: white;
             padding: 10px;
         }
-        .textoexplicativo{
+
+        .textoexplicativo {
             margin-top: 10px;
             border: solid 1px rgb(255, 255, 255);
             border-radius: 20px;
@@ -81,20 +82,27 @@ body::-webkit-scrollbar-thumb {
             background-color: white;
             border-radius: 20px;
             padding: 10px;
-            margin-left: 50%;
-            margin-bottom: 100px;
+            margin-top: 1%;
+            margin-left: 45%;
             color: black;
-            
         }
+        footer{
+            width: 100%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
         .escuro {
             background: rgb(5, 5, 5);
             background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgba(73, 73, 77, 1) 50%, rgba(25, 29, 29, 1) 100%);
         }
-
-        .escuro button {
-            color: orange;
+        button:hover{
+            box-shadow: 1px 2px 5px aqua
         }
-
+        .escuro button:hover{
+            box-shadow: 1px 2px 5px orange
+        }
+    
         .escuro header {
             color: orange;
         }
@@ -102,24 +110,30 @@ body::-webkit-scrollbar-thumb {
         .escuro main {
             color: orange;
         }
-        .escuro div{
+
+        .escuro div {
             color: orange;
         }
-        .escuro p{
+
+        .escuro p {
             color: black;
         }
-        a:link{
+
+        a:link {
             color: darkorange;
             text-decoration: none;
         }
-        a:visited{
+
+        a:visited {
             color: black;
             text-decoration: none;
         }
-        a:hover{
+
+        a:hover {
             color: orange;
         }
-        mark{
+
+        mark {
             background-color: aqua;
         }
     </style>
@@ -141,7 +155,8 @@ body::-webkit-scrollbar-thumb {
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     </main>
     <div class="textoexplicativo">
-        <p>Projeto muito legal desenvolvido na <mark>imersão dev</mark>, onde fizemos esses codigos. Básicamente você pode adicionar qualquer filme apenas importando seu png.</p>
+        <p>Projeto muito legal desenvolvido na <mark>imersão dev</mark>, onde fizemos esses codigos. Básicamente você
+            pode adicionar qualquer filme apenas importando seu png.</p>
     </div>
 
 
@@ -149,7 +164,7 @@ body::-webkit-scrollbar-thumb {
     <footer>
         <a id="voltar" href="index.html">voltar</a>
     </footer>
-  
+
     <script>
         function mudarTema() {
             document.body.classList.toggle("escuro")

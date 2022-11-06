@@ -23,14 +23,19 @@ body::-webkit-scrollbar-thumb {
     background-color: orange;
     border-radius: 20px;
 }
-
+/*botao de mudar tema escuro*/
+.escuro button:hover{
+ box-shadow: 1px 2px 5px orange;
+}
 body {
     font-family: "Orbitron", sans-serif;
     ;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
-
+mark{
+    background-color: aqua;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -143,10 +148,6 @@ p {
     margin: 30px;
     padding: 10px;
 }
-
-
-
-
 /*botao de mudar tema*/
 button {
     background-color: white;
@@ -154,14 +155,15 @@ button {
     border-radius: 20px;
     padding: 10px;
     display: flex;
-    margin-left: 1100px;
+    margin-left: 90%;
     font-family: "Orbitron", sans-serif;
 
 }
 
-body button:hover {
-    padding: 20px;
+button:hover {
+    box-shadow: 1px 2px 5px aqua;
 }
+
 
 /*parte do link*/
 a:link {

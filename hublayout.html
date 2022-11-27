@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,28 +17,28 @@
         }
 
         body::-webkit-scrollbar {
-    width: 12px;
-    /* width of the entire scrollbar */
-}
+            width: 12px;
+            /* width of the entire scrollbar */
+        }
 
-body::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
-    /* color of the tracking area */
-}
+        body::-webkit-scrollbar-track {
+            background: rgb(255, 255, 255);
+            /* color of the tracking area */
+        }
 
-body::-webkit-scrollbar-thumb {
-    background-color: aqua;
-    border-radius: 20px;
-}
+        body::-webkit-scrollbar-thumb {
+            background-color: aqua;
+            border-radius: 20px;
+        }
 
-.escuro body::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
-}
+        .escuro body::-webkit-scrollbar-track {
+            background: rgb(255, 255, 255);
+        }
 
-.escuro::-webkit-scrollbar-thumb {
-    background-color: orange;
-    border-radius: 20px;
-}
+        .escuro::-webkit-scrollbar-thumb {
+            background-color: orange;
+            border-radius: 20px;
+        }
 
         button {
             background-color: white;
@@ -49,9 +50,11 @@ body::-webkit-scrollbar-thumb {
             font-family: "Orbitron", sans-serif;
 
         }
-        button:hover{
+
+        button:hover {
             box-shadow: 1px 2px 5px aqua
         }
+
         header {
             display: flex;
             justify-content: space-between;
@@ -62,40 +65,48 @@ body::-webkit-scrollbar-thumb {
             margin-top: 65px;
             margin: 30px;
         }
-        section{
+
+        section {
             border: solid 1px rgb(255, 255, 255);
             border-radius: 20px;
             background-color: white;
             padding: 10px;
             margin-bottom: 10px;
         }
+
         /*configuraçoes especiais para aqui*/
-       .flex-container{
-        display: flex;
-       }
-       .coluna{
-        width: 100%;
-       }
-       .imagem{
-        width: 50%;
-       }
-       .texto{
-        width: 50%;
-        font-size: 25px;
-        text-align:justify;
-       }
-        img{
+        .flex-container {
+            display: flex;
+        }
+
+        .coluna {
+            width: 100%;
+        }
+
+        .imagem {
+            width: 50%;
+        }
+
+        .texto {
+            width: 50%;
+            font-size: 25px;
+            text-align: justify;
+        }
+
+        img {
             margin-top: 7%;
             width: 50%;
             height: 200px;
             margin-left: 50%;
         }
-        img:hover{
+
+        img:hover {
             width: 80%;
             margin-left: 25%;
         }
+
         /*configurações especiais para ca*/
-        .textoexplicativo{
+        .textoexplicativo {
             margin-top: 10px;
             border: solid 1px rgb(255, 255, 255);
             border-radius: 20px;
@@ -103,7 +114,8 @@ body::-webkit-scrollbar-thumb {
             padding: 10px;
             margin-bottom: 100px;
         }
-        #voltar{
+
+        #voltar {
             border: 1px solid white;
             background-color: white;
             border-radius: 20px;
@@ -112,15 +124,18 @@ body::-webkit-scrollbar-thumb {
             margin-left: 45%;
             color: black;
         }
-        footer{
+
+        footer {
             width: 100%;
             margin-top: 5%;
             margin-bottom: 5%;
         }
+
         .escuro {
             background: rgb(5, 5, 5);
             background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgba(73, 73, 77, 1) 50%, rgba(25, 29, 29, 1) 100%);
         }
+
         .escuro header {
             color: orange;
         }
@@ -128,39 +143,48 @@ body::-webkit-scrollbar-thumb {
         .escuro main {
             color: orange;
         }
-        .escuro div{
+
+        .escuro div {
             color: orange;
         }
-        .escuro p{
+
+        .escuro p {
             color: black;
         }
-        a:link{
-            color: black;
-            text-decoration: none;
-        }
-        a:visited{
+
+        a:link {
             color: black;
             text-decoration: none;
         }
-        a:hover{
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
             border: 1px solid aqua;
             border-radius: 20px;
             padding: 5px;
             color: rgb(0, 0, 0);
             box-shadow: 1px 2px 5px aqua;
         }
-        .escuro a:hover{
+
+        .escuro a:hover {
             border: 1px solid orange;
             box-shadow: 1px 2px 5px orange
         }
-        mark{
+
+        mark {
             background-color: aqua;
         }
-        .escuro button:hover{
+
+        .escuro button:hover {
             box-shadow: 1px 2px 5px orange
         }
     </style>
 </head>
+
 <body>
     <button onclick="mudarTema()" class="botão">Mudar Tema</button>
     <header>
@@ -170,32 +194,48 @@ body::-webkit-scrollbar-thumb {
     <main>
         <!--layout pet shop-->
         <section class="projeto">
-        <div class="flex-container">
-            <div class="texto coluna">
-           <h2>PET SHOP</h2><br>
-           <p>lay out desenvolvido no primeiro semestre da ETEC, na materia de pwI (programação web) do professor wilians, no segundo semestre de 2022.</p>
-           <a href="https://vv1ll14n.github.io/PET-SHOP/"target="_blank">clique para acessar🐶</a>
-            </div>
-            <div class="imagem coluna">
-           <figure>
-                <img src="img/logo-mari-e-gabi-petshop.svg" alt="foto do projeto">
-           </figure>
-        </div>
+            <div class="flex-container">
+                <div class="texto coluna">
+                    <h2>PET SHOP</h2><br>
+                    <p>lay out desenvolvido no primeiro semestre da ETEC, na materia de pwI (programação web) do
+                        professor wilians, no segundo semestre de 2022.</p>
+                    <a href="https://vv1ll14n.github.io/PET-SHOP/" target="_blank">clique para acessar🐶</a>
+                </div>
+                <div class="imagem coluna">
+                    <figure>
+                        <img src="img/logo-mari-e-gabi-petshop.svg" alt="foto do projeto">
+                    </figure>
+                </div>
         </section>
         <section>
-        <div class="flex-container">
-            <div class="texto coluna">
-           <h2>NETURE</h2><br>
-           <p>Neture é o nome de uma farmácia fictícia, que crie para dar inicio a minha meta de projetos semanais, com HTML, CSS e o desing feio no FIGMA tudo feito por mim.</p>
-           <a href="https://vv1ll14n.github.io/FARMACIA-NETURE/" target="_blank">clique para acessar🌱</a>
+            <div class="flex-container">
+                <div class="texto coluna">
+                    <h2>NETURE</h2><br>
+                    <p>Neture é o nome de uma farmácia fictícia, que crie para dar inicio a minha meta de projetos
+                        semanais, com HTML, CSS e o desing feio no FIGMA tudo feito por mim.</p>
+                    <a href="https://vv1ll14n.github.io/FARMACIA-NETURE/" target="_blank">clique para acessar🌱</a>
+                </div>
+                <div class="imagem coluna">
+                    <figure>
+                        <img src="img/LOGO SVG.svg" alt="foto do projeto">
+                    </figure>
+                </div>
             </div>
-            <div class="imagem coluna">
-           <figure>
-                <img src="img/LOGO SVG.svg" alt="foto do projeto">
-           </figure>
-        </div>
-        </div>
-       </section>
+        </section>
+        <section>
+            <div class="flex-container">
+                <div class="texto coluna">
+                    <h2>Salão da beleza</h2><br>
+                    <p>Salão da beleza é um salão fictício, um projeto onde utilizei a biblioteca bootstrap pela primeira vez, tudo feito por mim inclusive a parte do figma.</p>
+                    <a href="https://vv1ll14n.github.io/PROJETO-03-SALAO-DE-BELEZA/" target="_blank">clique para acessar💅</a>
+                </div>
+                <div class="imagem coluna">
+                    <figure>
+                        <img src="img/logo-salao.svg" alt="foto do projeto">
+                    </figure>
+                </div>
+            </div>
+        </section>
 
 
     </main>
@@ -209,4 +249,5 @@ body::-webkit-scrollbar-thumb {
         }
     </script>
 </body>
+
 </html>
